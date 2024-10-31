@@ -19,7 +19,7 @@ class StoreUser(HttpUser):
         self.client.get(f"/store/products/{product_id}", name="/store/products/:id")
 
     @task
-    def crate_cart_add_items(self):
+    def create_cart_add_items(self):
         response = self.client.post("/store/cart")
         cart_id = response.json()["id"]
         product_id = random.choice(self.products)
