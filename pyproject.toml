@@ -16,7 +16,7 @@ license = { text = "MIT" }
 
 [tool.pdm.dev-dependencies]
 dev = [
-    "locust>=2.15.1",
+    "locust>=2.32.1",
 ]
 
 [tool.pdm.scripts]
